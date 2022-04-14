@@ -1,0 +1,3 @@
+rootProject.name = "cryptolist"
+include ':app'
+include ':data'

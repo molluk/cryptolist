@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="backgroundTile">#0D000000</color>
+    <color name="dividerColor">#E6E6E6</color>
+    <color name="strokeColor">#505050</color>
+    <color name="growthPositive">#2BEE20</color>
+    <color name="growthNegative">#FF0000</color>
+    <color name="backgroundLight">#FAFAFA</color>
+    <color name="backgroundDark">#1E1E1E</color>
+</resources>

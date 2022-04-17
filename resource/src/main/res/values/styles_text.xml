@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="NameCoin">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="lineHeight">20dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="capitalizationCoin" parent="NameCoin">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="PriceCoin" parent="NameCoin"></style>
+
+    <style name="GrowthCoinPositive" parent="NameCoin">
+        <item name="outlineColor">@color/black</item>
+        <item name="outlineWidth">0.2dp</item>
+        <item name="android:textColor">@color/growthPositive</item>
+    </style>
+
+    <style name="GrowthCoinNegative" parent="GrowthCoinPositive">
+        <item name="android:textColor">@color/growthNegative</item>
+    </style>
+</resources>

@@ -1,6 +1,7 @@
 package bomond.cryptolist.ui.splash
 
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,10 +21,12 @@ class SplashFragment : Fragment() {
     ): View? {
         binding = FragmentSplashBinding.inflate(inflater, container, false)
 
-        val navController =
+        var navController =
             Navigation.findNavController(requireActivity(), R.id.activityFragmentHost)
 
-        val mainGraph = navController.navInflater.inflate(R.navigation.start_navigation_graph)
+        binding.text.setOnClickListener {
+            navController.navigate(R.id.HomeFragment)
+        }
 
         return binding.root
     }

@@ -10,8 +10,27 @@
         android:name="bomond.cryptolist.ui.splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash">
-
-
+        <action
+            android:id="@+id/action_SplashFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
     </fragment>
 
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="bomond.cryptolist.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_SelectedElementFragment"
+            app:destination="@id/SelectedElementFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SelectedElementFragment"
+        android:name="bomond.cryptolist.ui.selectedElement.SelectedElementFragment"
+        android:label="fragment_selected_element"
+        tools:layout="@layout/fragment_selected_element">
+
+    </fragment>
 </navigation>

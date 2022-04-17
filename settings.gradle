@@ -1,4 +1,5 @@
 rootProject.name = "cryptolist"
 include ':app'
-include ':data'
 include ':resource'
+include ':di'
+include ':util'
